@@ -12,7 +12,7 @@ $(document).ready(() => {
     $('.amenities h4').text(str);
     if (values.length === 0) $('.amenities h4').html('&nbsp;');
   });
-  $.get('http://0.0.0.0:5001/api/v1/status/', (data) => {
+  $.get('http://127.0.0.1:5001/api/v1/status/', (data) => {
     if (data.status === 'OK') {
       $('#api_status').addClass('available');
     } else {
